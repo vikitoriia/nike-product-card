@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/transfonter.org-20191022-145533/MuseoSansCyrl-500.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 200 14px/1.2 "MuseoSans", sans-serif;
+  background: url(../img/background.png);
+  background-size: cover;
+  color: #8d9298;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+}
+
+.ba-nike-card {
+  background-color: #152335;
+  margin: 110px 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 10px #000;
+  position: relative;
+  padding: 75px 53px 75px 36px;
+  display: flex;
+  align-items: center;
+}
+
+.ba-nike-card__logo {
+  position: absolute;
+  top: 25px;
+  left: 21px;
+}
+
+.ba-nike-card__img {
+  width: 50%;
+}
+
+.ba-card-form__title {
+  color: #bebfc2;
+  font-size: 24px;
+  margin: 0;
+}
+
+.ba-card-form__subtitle {
+  color: #58606a;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.ba-nike-star {
+  direction: ltr;
+  margin-bottom: 20px;
+}
+
+.ba-nike-star > span {
+  display: inline-block;
+  position: relative;
+  width: 14px;
+}
+
+.ba-nike-star > span:hover::before,
+.ba-nike-star > span:hover ~ span::before {
+  content: "\2605";
+  position: absolute;
+  color: #ffcc00;
+}
+
+.ba-card-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 82px;
+  width: 50%;
+}
+
+.ba-card-select__options {
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.ba-card-pick__size,
+.ba-card-pick__qty {
+  background-color: #152335;
+  padding: 0 10px;
+  min-height: 32px;
+  min-width: 69px;
+  line-height: 31px;
+}
+
+.ba-card-pick__size + .ba-card-pick__qty {
+  margin-left: 3px;
+}
+
+.ba-card-select__btn {
+  background-color: #152335;
+  min-height: 40px;
+  line-height: 39px;
+  padding: 0 57px;
+  border: 1px solid #bebfc2;
+}
+
+.ba-card-select__btn:hover {
+  background-color: #2a3545;
+}
